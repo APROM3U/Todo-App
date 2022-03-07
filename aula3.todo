@@ -1,0 +1,58 @@
+Criando o useState: 
+    ✔ No arquivo src/views/Home/index.js import o useState abaixo: @done(22-03-05 20:18)
+        import React, { useState } from 'react';
+    ✔ No arquivo src/views/Home/index.js dentro da função Home criar os useState abaixo: @done(22-03-05 20:18)
+        const [filterActived, setFilterActived] = useState('all');
+    ✔ Criar uma Tag button para cada componente FilterCard e mover o componente para dentro da Tag button @done(22-03-05 20:25)
+    ✔ Adicionar OnClick nos botões de filter com  setFilterActived informando os tipos abaixo: @done(22-03-05 20:25)
+        -all
+        -today
+        -week
+        -month
+        -year
+        exemplo
+        *onClick={() => setFilterActived("today")}
+    ✔ Criar lógica de filterCard Ativo. Informar Actived=true para o componente FilterCard ativo @done(22-03-05 20:25)
+    ✔ Execute e teste o Projeto @done(22-03-05 20:25)
+
+Criando useEffect: 
+    ✔ No arquivo src/views/Home/index.js import o useEffect abaixo: @done(22-03-05 20:25)
+        import React, { useState, useEffect } from 'react';
+    ✔ No arquivo src/views/Home/index.js criar o useState abaixo: @done(22-03-05 20:37)
+        const [tasksApi, setTasksApi] = useState([]);
+    ✔ Dentro da function 'Home' criar uma função async com o nome 'loadTasks' @done(22-03-05 22:19)
+    ✔ Essa função deve carregar as tasks no tasksApi @done(22-03-05 22:33)
+        *Dica:setTasksApi() 
+    ✔ Criar o useEffect: o useEffect deverá chamar a função 'loadTasks' e monitorar o estado "filterActived" @done(22-03-05 22:33)
+        *useEffect(()=>{
+            //código
+        },[//states a monitorar])
+    ✔ Substituir o tasks.map para tasksApi.map @done(22-03-05 22:21)
+    ✔ Execute e teste o Projeto @done(22-03-05 22:34)
+
+Criando o Services:
+    ✔ Instale o pacote axios @done(22-03-05 20:39)
+    ✔ Dentro da pasta src criar a pasta services e um arquivo api.js @done(22-03-05 20:40)
+    ✔ Dentro do arquivo api.js copie o código abaixo: @done(22-03-05 20:41)
+        import axios from 'axios';
+
+        const api = axios.create({
+        baseURL: 'https://todo-back-fullstack.herokuapp.com'
+        });
+
+        export default api;
+
+ Utilizando os endpoints do BackEnd:
+    ✔ No arquivo src/views/Home/index.js import o useState abaixo: @done(22-03-05 22:15)
+        import api from '../../services/api';
+    ✔ Utilizando a documentação fornecida localize quais endpoints filtram as tarefas. @done(22-03-05 22:15)
+        Dicas:utilizar o idClient 321654
+    ✔ Utilize os endpoints dentro da função loadTask, substituindo o código anterior. @done(22-03-05 22:18)
+        Dica:   await api.get(`rota`)
+            .then(response => {
+                setTasksApi(response.data)
+            })
+        }
+        Dica2: é possível concatenar 
+    ✔ Deletar a variável tasks. @done(22-03-05 22:33)
+    ✔ Execute e teste o Projeto @done(22-03-05 22:33)

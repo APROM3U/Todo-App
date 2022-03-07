@@ -1,0 +1,62 @@
+Projeto:https://todo-react-fullstack.herokuapp.com/
+Documentação api:https://documenter.getpostman.com/view/12617683/UVByHq4C
+
+Criando um projeto em React:
+    ✔ Instalar o 'npm install -g create-react-app' @done(22-03-02 23:06)
+    ✔ Criar o projeto utilizando o comando npx create-react-app todo-app --use-npm @done(22-03-02 23:06)
+    ✔ Executar o projeto com npm start (Certifique que está na pasta todo-app) @done(22-03-02 23:06)
+
+Configurando nosso projeto:
+    ✔ Instalar o npm install styled-components @done(22-03-02 23:09)
+    ✔ Colar dentro da pasta src a pasta assets fornecido.(Essa pasta contém todas as imagens que iremos utilizar) @done(22-03-02 23:09)
+    ✔ Dentro da pasta src colar a pasta 'views' e 'componentes' fornecidos @done(22-03-02 23:20)
+    ✔ No arquivo index.js import a view 'Home' e exclua a linha que importa o App @done(22-03-02 23:20)
+    ✔ Renderize o componente @done(22-03-02 23:20)
+    ✔ Delete: App.js; app.css; app.test.js @done(22-03-02 23:21)
+    ✔ Execute e teste o projeto @done(22-03-02 23:21)
+
+Criando o primeiro componente Footer: 
+    ✔ Criar dentro da pasta Footer o arquivo index.js e import os styles. Segue exemplo abaixo: @done(22-03-02 23:55)
+        import * as S from './styles';
+    ✔ Criar a function 'Footer' e exportar. Segue exemplo abaixo: @done(22-03-02 23:55)
+        export default Footer;
+    ✔ retun um spam  <span>ToDO - Organizando sua vida</span> @done(22-03-02 23:56)
+    ✔ Desenvolver o Footer conforme o pdf @done(22-03-04 15:05)
+
+Importando o componente Footer a views Home:
+    ✔ No arquivo views/Home/index.js importe o Footer @done(22-03-04 15:05)
+    ✔ Renderize o Footer @done(22-03-04 15:05)
+    ✔ Execute e teste o projeto @done(22-03-04 15:06)
+
+Criando o componente Header: 
+    ✔ Criar dentro da pasta Header o arquivo index.js e import os styles. Segue exemplo abaixo: @done(22-03-04 15:07)
+        import * as S from './styles';
+    ✔ Criar a function 'Header' e exportar. Segue exemplo abaixo: @done(22-03-04 15:07)
+        export default Footer;
+    ✔ Import a logo @done(22-03-04 17:29)
+    ✔ Copiar a estrutura do css abaixo e colar dentro da função: @done(22-03-04 15:21)
+        <S.Container>
+            <S.LeftSide>
+
+            </S.LeftSide>
+            <S.RightSide>
+        
+            </S.RightSide>
+        </S.Container>
+    ✔ Dentro de "S.LeftSide" criar uma tag img @done(22-03-04 17:29)
+    ✔ Dentro de "S.RightSide" criar os Button INICIO NOVA TAREFA SAIR @done(22-03-04 17:37)
+    ✔ Crie os button conforme o pdf @done(22-03-04 17:37)
+
+Importando o componente Header a views  Home:
+    ✔ No arquivo views/Home/index.js importe o Header @done(22-03-04 17:21)
+    ✔ Renderize o Header @done(22-03-04 17:21)
+    ✔ Exclua o <h2> @done(22-03-04 17:22)
+    ✔ Execute e teste o projeto @done(22-03-04 17:37)
+  
+Dicas do Prof:
+    ✔ Inicial do nome de um Componentes deve ser maiúsculo 
+    ✔ Não iremos utilizar <require("")> e sim <import React from 'react'> 
+    ✔ React DOM usa a convenção de nomenclatura camelCase. Exemplo: <class> se torna <className>
+    ✔ Tags devem ser fechadas. Exemplo: <Footer/>
+    ✔ So é possível retornar apenas um html por componente
+    

@@ -1,0 +1,45 @@
+Criando o componente FilterCard: 
+    
+    ✔ Cole a pasta FilterCard em Components @done(22-03-04 17:52)
+    ✔ No arquivo views/Home/index.js importe o FilterCard @done(22-03-04 17:52)
+    ✔ Renderize o FilterCard @done(22-03-04 17:52)
+    ✔ Execute e teste o projeto @done(22-03-04 17:52)
+
+Utilizando Props para passar informações entre componentes (FilterCard): 
+    ✔ Cole a pasta FilterCard em Components @done(22-03-04 17:53)
+    ✔ No arquivo FilterCard/index.js a função deve receber as props { title, actived } @done(22-03-04 23:32)
+    ✔ Utilize os parâmetros no componente @done(22-03-04 23:32)
+    ✔ No arquivo views/Home/index.js passe como prop no componente FilterCard < title="Hoje"   actived={false} > @done(22-03-04 23:32)
+    ✔ Execute e teste o projeto @done(22-03-04 23:32)
+    ✔ Replique o componente criando o FilterCard: Todos; Semana; Mês; Ano @done(22-03-04 23:32)
+    ✔ Execute e teste o projeto @done(22-03-04 23:32)
+
+Criando o componente TaskCard: 
+    ✔ Cole a pasta 'TaskCard' em 'Components' @done(22-03-04 23:13)
+    ✔ Cole a pasta 'utils' em 'src' @done(22-03-04 23:13)
+    ✔ No arquivo views/Home/index.js importe o TaskCard @done(22-03-04 23:14)
+    ✔ Renderize o TaskCard @done(22-03-04 23:14)
+    ✔ Execute e teste o projeto @done(22-03-04 23:14)
+
+Utilizando Props para passar informações entre componentes (TaskCard): 
+    ✔ No arquivo TaskCard/index.js a função deve receber as props {type, title, when, done } @done(22-03-04 23:50)
+    ✔ Utilize os parâmetros no componente @done(22-03-04 23:50)
+    ✔ No arquivo views/Home/index.js  no início no código cole a variável abaixo @done(22-03-04 23:58)
+        const tasks = [{ "done": false, "created": "2021-10-23T20:05:31.643Z", "_id": "101", "macaddress": "9191", "type": 5, "title": "Futebol Com a Galera", "description": "Jogar Futebol", "when": "10/05/2021", "__v": 0 },
+        { "done": false, "created": "2021-10-23T20:05:31.643Z", "_id": "102", "macaddress": "6666", "type": 2, "title": "Comprar Café", "description": "Café é Vida", "when": "11/05/2021", "__v": 0 }]
+    ✔ Utilize o array para chamar o componente passe como parâmetro type={t.type} title={t.title} when={t.when} done={t.done} @done(22-03-05 00:20)
+    ✔ No arquivo views/Home/index.js passe como prop no componente TaskCard type={t.type} title={t.title} when={t.when} done={t.done}. Utilize o Map @done(22-03-05 00:21)
+    ✔ Execute e teste o projeto @done(22-03-05 00:21)
+    ✔ Resolva o erro no console "Warning: Each child in a list should have a unique "key" prop." @done(22-03-05 00:21)
+
+Desafio Utilizar PropTypes em todos os componentes que que recebem prop:
+
+Dicas do Prof:
+    ✔ A função de componente React aceita um argumento, e nele podemos passar um objeto. 
+    ✔ Passando props. Exemplo: <BemVindo nome="Iago Nunes" prof={true}>  
+    ✔ No componente recebendo a props. Exemplo: function Home({{ nome, prof }})  
+    ✔ Podemos passar para outro componentes array com isso iremos utilizar utilizar <.map()>
+    ✔ React usa keys para determinar se ainda trata-se do mesmo elemento ou não após modifica-los.Quando necessário incluir KEYS 
+        devem ser únicas entre os elements irmão e devem ser atribuídas a elementos dentro do mapeamento do array para dar aos elemento uma identidade
+    ✔ Usamos um children quando não sabemos exatamente que conteúdo pode-se ter dentro de um container-pai. Dessa forma, estamos configurando um componente flexível e reutilizável.    
+  
